@@ -1,0 +1,156 @@
+
+#buttons-container {
+  position: absolute;
+  z-index: 2;  
+  width: 100vw;
+}
+
+#full-screen-video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+#lower-video-bar {
+  height: 20vh;
+}
+
+#local-stream-container { 
+  position: relative; 
+  display: inline-block;
+}
+
+.remote-stream-container { 
+  display: inline-block;
+}
+
+#remote-streams {
+  height: 100%;
+}
+
+#local-video {
+  position: absolute;
+  z-index: 1;
+  height: 20vh;
+  max-width: 100%;
+}
+
+.remote-video {
+  position: absolute;
+  z-index: 1;
+  height: 100% !important;
+  width: 80%;
+  max-width: 500px;
+}
+
+#mute-overlay {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  color: #d9d9d9;
+  font-size: 2em;
+  padding: 0 0 3px 3px;
+  display: none;
+} 
+
+.mute-overlay {
+  position: absolute;
+  z-index: 2;
+  top: 2px;
+  color: #d9d9d9;
+  font-size: 1.5em;
+  padding: 2px 0 0 2px;
+  display: none;
+}
+
+#no-local-video, .no-video-overlay {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 40%;
+  color: #cccccc;
+  font-size: 2.5em;
+  margin: 0 auto;
+  display: none;
+}
+
+.no-video-overlay {
+  width: 80%;
+}
+
+#screen-share-btn-container {
+  z-index: 99;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.divCover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divCover img{
+    width: 70%;
+}
+a{
+    text-decoration: none !important;
+}
+#userFullNameError, #userQualificationError, #userLocationError, #userEmailError, #userPasswordError, #userSIEmailError, #userSIPasswordError, #userBioError, #editProfileForm{
+    display: none;
+}
+
+#userAvatar{
+    width: 120px;
+    height: 120px;
+}
+
+.map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
